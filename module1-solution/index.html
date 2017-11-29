@@ -1,31 +1,34 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <title>Lunch Checker</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://github.com/mallinookala03/coursera-spa/blob/master/module1-solution/styles/bootstrap.min.css">
-    <style>
-      .message { font-size: 1.3em; font-weight: bold; }
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://github.com/mallinookala03/coursera-spa/blob/master/module1-solution/styles/bootstrap.min.css" />
+    <style type="text/css">
+        .message
+        {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>    
-     <script src="https://github.com/mallinookala03/coursera-spa/blob/master/module1-solution/Scripts/app.js"/>
-  </head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script type="text/javascript" src="https://github.com/mallinookala03/coursera-spa/blob/master/module1-solution/Scripts/app.js" />
+</head>
 <body ng-app="LunchCheck">
-   <div class="container" ng-controller="LunchCheckController">
-     <h1>Lunch Checker</h1>
-
-         <div class="form-group">
-             <input id="lunch-menu" type="text" mg-model="items"
-             placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control">
-         </div>
-         <div class="form-group">
-             <button class="btn btn-default" ng-click="CheckItems()">Check If Too Much</button>
-         </div>
-         <div class="form-group message">
-          {{message}}
-         </div>
-   </div>
-
+    <div class="container" ng-controller="LunchCheckController">
+        <h1>
+            Lunch Checker</h1>
+        <div class="form-group">
+            <input id="lunch-menu" type="text" mg-model="items" placeholder="list comma separated dishes you usually have for lunch"
+                class="form-control" />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-default" ng-click="CheckItems()">
+                Check If Too Much</button>
+        </div>
+        <div class="form-group message">
+            {{message}}
+        </div>
+    </div>
 </body>
 </html>
